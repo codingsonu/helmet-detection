@@ -3,21 +3,24 @@
 ```markdown
 # 🦺 Helmet Compliance Detection System
 
-AI-powered real-time helmet detection system for industrial safety monitoring using YOLOv8 and Streamlit.
+AI-powered real-time helmet detection system for safety monitoring using YOLOv8 and Streamlit.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B)
 
----
+------------------------------
+Model used from https://github.com/Sudhanshu4909/Helmet-Detection-YoloV8/tree/main/models
+
+-------------------------------
 
 ## 📋 Overview
 
-Automatically detect and monitor helmet usage in industrial environments. Process video feeds, track workers, classify compliance, and generate safety analytics.
+Automatically detect and monitor helmet usage in industrial environments. Process video feeds, track safety, classify compliance, and generate safety analytics.
 
 **Key Features:**
 - ✅ Real-time helmet detection using YOLOv8
-- ✅ Worker tracking across frames (SORT algorithm)
+- ✅ Safety tracking across frames (SORT algorithm)
 - ✅ Interactive web dashboard (Streamlit)
 - ✅ Automated CSV reports and violation snapshots
 - ✅ Compliance analytics and metrics
@@ -30,7 +33,7 @@ Automatically detect and monitor helmet usage in industrial environments. Proces
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/helmet-detection.git
+git clone https://github.com/codingsonu/helmet-detection.git
 cd helmet-detection
 
 # Create virtual environment
@@ -205,55 +208,21 @@ video:
 pip install -r requirements.txt --upgrade
 ```
 
----
-
-## 📈 Performance
-
-| Hardware | Resolution | FPS |
-|----------|-----------|-----|
-| CPU (i5) | 720p | 5-10 |
-| GPU (GTX 1660) | 720p | 40-60 |
-| GPU (RTX 3060) | 1080p | 60-80 |
-
-**Optimization Tips:**
-- Use GPU for 10-20x speedup
-- Skip frames for faster processing
-- Lower confidence threshold for more detections
-
----
 
 ## ⚠️ Limitations
 
 - Struggles with heavily occluded objects
 - Performance degrades in poor lighting
 - Works best with frontal/side camera angles
-- May miss very distant workers (<20 pixels)
+- May miss very distant workers/persons (<20 pixels)
 - Trained on specific helmet styles
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! 
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add feature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
----
-
-## 📜 License
-
-MIT License - see [LICENSE](LICENSE) file
 
 ---
 
 ## 📞 Contact
 
-**GitHub**: [@yourusername](https://github.com/yourusername)  
-**Email**: your.email@example.com
+**GitHub**: [@codingsonu](https://github.com/codingsonu)  
+**Email**: silawatsonu@gmail.com
 
 ---
 
@@ -264,39 +233,8 @@ MIT License - see [LICENSE](LICENSE) file
 - [Streamlit](https://streamlit.io/)
 - [OpenCV](https://opencv.org/)
 
----
 
-## 📚 Documentation
 
-For detailed documentation, see:
-- [Installation Guide](docs/installation.md)
-- [API Reference](docs/api.md)
-- [Deployment Guide](docs/deployment.md)
 
----
-
-<div align="center">
-
-**⭐ Star this repo if you find it useful!**
-
-[Report Bug](https://github.com/yourusername/helmet-detection/issues) · 
-[Request Feature](https://github.com/yourusername/helmet-detection/issues)
-
-Made with ❤️ for Worker Safety
-
-</div>
-```
-
----
-
-This short version includes:
-- ✅ Quick overview
-- ✅ Fast installation steps
-- ✅ Simple usage examples
-- ✅ Key features
-- ✅ Essential configuration
-- ✅ Output descriptions
-- ✅ Basic troubleshooting
-- ✅ Contact info
 
 Perfect for GitHub and quick reference! 🚀
