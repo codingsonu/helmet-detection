@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.Python
+*.so
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Input Data (large files)
+data/input/*.mp4
+data/input/*.avi
+data/input/*.mov
+data/input/*.mkv
+data/input/*.jpg
+data/input/*.png
+
+# Model Files (large files)
+# data/models/*.pt
+# data/models/*.pth
+# data/models/*.weights
+
+# Output Files
+output/videos/*
+output/logs/*
+output/snapshots/*
+
+# Keep directory structure
+!output/**/.gitkeep
+!data/**/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Logs
+*.log
+
+# Environment & Secrets
+.env
+.streamlit/secrets.toml
+
+# Temporary
+tmp/
+temp/
+*.bak

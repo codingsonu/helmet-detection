@@ -1,0 +1,38 @@
+# Model Configuration
+model:
+  weights_path: "data/models/helmet_best.pt"
+  confidence_threshold: 0.5
+  iou_threshold: 0.45
+  device: "cpu"  # Change to "cuda" if you have GPU
+
+# Class Configuration (Your model only has Helmet class)
+classes:
+  helmet: 0
+
+# Tracking Configuration
+tracking:
+  max_age: 30
+  min_hits: 3
+  iou_threshold: 0.3
+
+# Video Processing
+video:
+  input_path: "data/input/warehouse.mp4"
+  output_path: "output/videos/annotated_output.mp4"
+  fps: 30
+  skip_frames: 1
+
+# Analytics
+analytics:
+  csv_path: "output/logs/compliance_log.csv"
+  snapshot_path: "output/snapshots/"
+  save_violations: true
+  violation_cooldown: 30
+
+# Visualization
+visualization:
+  bbox_thickness: 2
+  font_scale: 0.6
+  compliant_color: [0, 255, 0]      # Green
+  non_compliant_color: [0, 0, 255]  # Red
+  person_color: [255, 165, 0]       # Orange
